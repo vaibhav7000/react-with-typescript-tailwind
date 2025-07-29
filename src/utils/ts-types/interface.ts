@@ -7,8 +7,8 @@ interface Todo {
 interface Expense {
     title: string;
     price: number;
-    categories: Category,
-    payment: Payment
+    categories: string,
+    payment: string
     
 }
 
@@ -17,12 +17,14 @@ type AllExpense = {
 }
 
 enum Category {
+    Category = "category",
     Food = "food",
     Travel = "travel",
     Entertainment = "entertainment",
 }
 
 enum Payment {
+    Payment = "payment",
     Cash = "cash",
     Card = "card",
     UPI = "upi",
